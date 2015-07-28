@@ -10,7 +10,7 @@
 
 ## 使用方法
 
-只需要让UIImageView对象调用这个方法即可
+将LJWebImage文件夹拖入项目中,让UIImageView对象调用这个方法即可
 ```
  setWebImage(path: String)
 ```

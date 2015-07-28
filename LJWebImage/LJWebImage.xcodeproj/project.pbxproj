@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F462241E1B6786970028E2F5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F462241D1B6786970028E2F5 /* TableViewController.swift */; };
 		F4BD24FE1B678039004707A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD24FD1B678039004707A4 /* AppDelegate.swift */; };
-		F4BD25001B678039004707A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD24FF1B678039004707A4 /* ViewController.swift */; };
 		F4BD25031B678039004707A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BD25011B678039004707A4 /* Main.storyboard */; };
 		F4BD25051B678039004707A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BD25041B678039004707A4 /* Assets.xcassets */; };
 		F4BD25081B678039004707A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BD25061B678039004707A4 /* LaunchScreen.storyboard */; };
@@ -19,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F462241D1B6786970028E2F5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F4BD24FA1B678039004707A4 /* LJWebImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJWebImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BD24FD1B678039004707A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4BD24FF1B678039004707A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4BD25021B678039004707A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4BD25041B678039004707A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4BD25071B678039004707A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			children = (
 				F4BD250F1B67804F004707A4 /* LIJWebImage */,
 				F4BD24FD1B678039004707A4 /* AppDelegate.swift */,
-				F4BD24FF1B678039004707A4 /* ViewController.swift */,
+				F462241D1B6786970028E2F5 /* TableViewController.swift */,
 				F4BD25011B678039004707A4 /* Main.storyboard */,
 				F4BD25041B678039004707A4 /* Assets.xcassets */,
 				F4BD25061B678039004707A4 /* LaunchScreen.storyboard */,
@@ -155,9 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4BD25171B67804F004707A4 /* WebImageManager.swift in Sources */,
+				F462241E1B6786970028E2F5 /* TableViewController.swift in Sources */,
 				F4BD25141B67804F004707A4 /* LIJOperation.swift in Sources */,
 				F4BD25161B67804F004707A4 /* UIImageView+WebImage.swift in Sources */,
-				F4BD25001B678039004707A4 /* ViewController.swift in Sources */,
 				F4BD24FE1B678039004707A4 /* AppDelegate.swift in Sources */,
 				F4BD25151B67804F004707A4 /* String+Path.swift in Sources */,
 			);
@@ -307,6 +307,7 @@
 				F4BD250E1B678039004707A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

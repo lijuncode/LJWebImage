@@ -61,7 +61,7 @@ class WebImageManager: NSObject {
         
         let imagePath = path.cachesPath()
         
-       
+//       print(imagePath)
         
         if let ime = UIImage(contentsOfFile: imagePath) {
             
@@ -110,7 +110,7 @@ class WebImageManager: NSObject {
         
     }
     
-    func test(){
-        
-    }
+//    func test(){
+//        
+//    }
 }

@@ -35,7 +35,7 @@ class LIJOperation: NSOperation {
         
         if path != nil{
         
-            NSThread.sleepForTimeInterval(5)
+//            NSThread.sleepForTimeInterval(5)
             
             let url = NSURL(string: path!)
             

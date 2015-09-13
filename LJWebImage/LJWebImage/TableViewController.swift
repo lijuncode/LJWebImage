@@ -15,6 +15,8 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +27,6 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return apps.count

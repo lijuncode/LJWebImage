@@ -24,7 +24,7 @@ class Cell: UITableViewCell {
             
         }
     }
-    
+
     override func prepareForReuse() {
         
         appIcon.image = nil

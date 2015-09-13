@@ -14,19 +14,29 @@ extension String {
         
         let path = NSSearchPathForDirectoriesInDomains( .DocumentDirectory, .UserDomainMask, true).last
         
-        return path!.stringByAppendingPathComponent(lastPathComponent)
+        let nsPath: NSString = path!
+        let nsSelf: NSString = self
+        
+        return nsPath.stringByAppendingPathComponent(nsSelf.lastPathComponent)
     }
     
     func cachesPath() -> String {
         
         let path = NSSearchPathForDirectoriesInDomains( .CachesDirectory, .UserDomainMask, true).last
         
-        return path!.stringByAppendingPathComponent(lastPathComponent)
+        let nsPath: NSString = path!
+        let nsSelf: NSString = self
+        
+        return nsPath.stringByAppendingPathComponent(nsSelf.lastPathComponent)
     }
     
     func tempPath() -> String {
         
-        return NSTemporaryDirectory().stringByAppendingPathComponent(lastPathComponent)
+        let path: NSString = NSTemporaryDirectory()
+        
+        let nsSelf: NSString = self
+        
+        return path.stringByAppendingPathComponent(nsSelf.lastPathComponent)
         
     }
     

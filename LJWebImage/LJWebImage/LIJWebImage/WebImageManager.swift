@@ -12,7 +12,7 @@ class WebImageManager: NSObject {
     
     let queue = NSOperationQueue()
     
-    var imageCache = NSMutableDictionary()
+    var imageCache = NSCache()
     
     var operationCache = NSMutableDictionary()
     
@@ -49,10 +49,11 @@ class WebImageManager: NSObject {
     
     func downloadWebImage(path: String, complition: (image: UIImage) -> ()){
         
-        if let ime = self.imageCache[path] as? UIImage {
+        if let ime = imageCache.objectForKey(path) as? UIImage {
             
             print("从内存中加载")
             complition(image: ime)
+            
             
             return
             
@@ -60,11 +61,14 @@ class WebImageManager: NSObject {
         
         let imagePath = path.cachesPath()
         
+       
+        
         if let ime = UIImage(contentsOfFile: imagePath) {
             
             complition(image: ime)
             
-            imageCache.setValue(ime, forKey: path)
+            imageCache.setObject(ime, forKey: path)
+            
             
             print("从沙盒中加载")
             
@@ -86,7 +90,8 @@ class WebImageManager: NSObject {
             print("下载完成")
             
            self.operationCache.removeObjectForKey(path)
-            self.imageCache.setValue(image, forKey: path)
+            self.imageCache.setObject(image, forKey: path)
+            
                 
                 complition(image: image)
             
@@ -105,5 +110,7 @@ class WebImageManager: NSObject {
         
     }
     
-   
+    func test(){
+        
+    }
 }

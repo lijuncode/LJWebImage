@@ -1,5 +1,7 @@
 # LJWebImage
 
+> 已适配最新的Xcode7 GM版
+
 ## 简介
 **LJWebImage**是用swift2.0简单模仿SDWebImage,实现网络图片的下载,功能如下:
 
@@ -14,3 +16,5 @@
 ```
  setWebImage(path: String)
 ```
+
+
